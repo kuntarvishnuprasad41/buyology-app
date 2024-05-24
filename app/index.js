@@ -5,7 +5,12 @@ import Banner from './components/universal/banner'
 import Tabs from './components/universal/tabs'
 
 import CategoryTabs from './components/universal/imageTabs'
-import Cards from './components/universal/cards'
+import ProductCard from './components/universal/cards'
+import MostPopular from './components/universal/mostPopular'
+import Aed1100 from './components/universal/aed1-100'
+import OrderStatusCard from './components/universal/orderStatusCard'
+import BottomNavBar from './components/universal/bottomNavBar'
+// import Cards from './components/universal/cards'
 
 
 
@@ -25,30 +30,46 @@ const index = () => {
     }
 
     return (
-        <ScrollView >
-            <Header />
-            <Banner width="100%" height={150} image="" />
+        <View>
+            <ScrollView >
+                <Header />
+                <Banner width="100%" height={150} image="" />
 
-            <CategoryTabs data={popcat}
-                bgcolor="transparent"
-                tabVal={activeCat}
-                settabData={categorySearch} />
-            <Tabs
-                data={popcat}
-                bgcolor="transparent"
-                tabVal={activeCat}
-                settabData={categorySearch}
-            />
-            <Cards data={popcat}
-                bgcolor="transparent"
-                tabVal={activeCat}
-                settabData={categorySearch}
-            />
+                <CategoryTabs data={popcat}
+                    bgcolor="transparent"
+                    tabVal={activeCat}
+                    settabData={categorySearch} />
+                <Tabs
+                    data={popcat}
+                    bgcolor="transparent"
+                    tabVal={activeCat}
+                    settabData={categorySearch}
+                />
+                <ProductCard data={popcat}
+                    bgcolor="transparent"
+                    tabVal={activeCat}
+                    settabData={categorySearch}
+                />
 
-            <Banner width="100%" height={150} image="" />
+                <Banner width="100%" height={150} image="a" />
+
+                <MostPopular data={popcat}
+                    bgcolor="transparent"
+                    tabVal={activeCat}
+                    settabData={categorySearch} />
+
+                <OrderStatusCard />
+
+                <Aed1100 data={popcat}
+                    bgcolor="transparent"
+                    tabVal={activeCat}
+                    settabData={categorySearch} />
 
 
-        </ScrollView>
+            </ScrollView>
+            <BottomNavBar />
+        </View>
+
     )
 }
 

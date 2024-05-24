@@ -7,7 +7,7 @@ import DefaultImage from '../../../assets/temp/iPhone.png';
 const DEFAULT_IMAGE = Image.resolveAssetSource(DefaultImage).uri;
 
 
-const ProductsCard = (props) => {
+const MostPopular = (props) => {
 
     const tab = (a) => {
         console.log('OK')
@@ -16,6 +16,10 @@ const ProductsCard = (props) => {
     return (
 
         <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }}>
+            <View className="flex flex-row justify-between w-screen px-2">
+                <Text className="font-bold text-black mb-1 p-2 text-[20px]">Most Popular</Text>
+                <Text className="font-bold text-[#402F75] mb-1 p-2">See All</Text>
+            </View>
 
             <ScrollView
                 horizontal
@@ -23,7 +27,7 @@ const ProductsCard = (props) => {
                 showsHorizontalScrollIndicator={false}
                 contentContainerStyle={{
                     backgroundColor: props.bgcolor,
-                    height: 370
+                    height: 300
                 }}>
                 {props.data.map((data, i) => {
                     return (
@@ -136,12 +140,12 @@ const styles = StyleSheet.create({
 
 })
 
-export default ProductsCard;
+export default MostPopular;
 
 
 export const ProductCard = () => {
     return (
-        <View style={styles.card} className="flex flex-col max-w-[170px]  items-center h-[360px] gap-0">
+        <View style={styles.card} className="flex flex-col max-w-[170px]  items-center h-[290px] gap-0">
             <Image
                 source={{ uri: DEFAULT_IMAGE }} // Replace with your image URL
                 style={styles.image}
@@ -158,16 +162,11 @@ export const ProductCard = () => {
                 </View>
             </View>
 
-            <View className="flex gap-2 mb-2">
-                <Text style={styles.title} className="line-clamp-2" >Apple iPhone 15 Pro Max 256GB Natural...</Text>
-                <View style={styles.priceContainer}>
-                    <Text style={styles.currentPrice}>AED 4,299</Text>
-                    <Text style={styles.originalPrice}>5,099</Text>
-                    <Text style={styles.discount}>15%</Text>
-                </View>
+            <View className="flex gap-2 mb-2 justify-start items-start content-start w-full">
+
 
                 <View style={styles.certifiedContainer}>
-                    <Text style={styles.certifiedText}>&nbsp;Certified</Text>
+                    <Text style={styles.certifiedText}>&nbsp;Sold 145</Text>
                 </View>
             </View>
 

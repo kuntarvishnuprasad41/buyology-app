@@ -7,7 +7,7 @@ import DefaultImage from '../../../assets/temp/iPhone.png';
 const DEFAULT_IMAGE = Image.resolveAssetSource(DefaultImage).uri;
 
 
-const ProductsCard = (props) => {
+const Aed1100 = (props) => {
 
     const tab = (a) => {
         console.log('OK')
@@ -16,6 +16,10 @@ const ProductsCard = (props) => {
     return (
 
         <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }}>
+            <View className="flex flex-row justify-between w-screen px-2">
+                <Text className="font-bold text-black mb-1 p-2 text-[20px]">Most Popular</Text>
+                <Text className="font-bold text-[#402F75] mb-1 p-2">See All</Text>
+            </View>
 
             <ScrollView
                 horizontal
@@ -136,8 +140,7 @@ const styles = StyleSheet.create({
 
 })
 
-export default ProductsCard;
-
+export default Aed1100;
 
 export const ProductCard = () => {
     return (
