@@ -24,7 +24,7 @@ const CategoryTabs = (props) => {
                 }}>
                 {props.data.map((data, i) => {
                     return (
-                        <View className="flex justify-center items-center content-center h-20">
+                        <View className="flex justify-center items-center content-center h-20" key={i}>
 
                             <TouchableOpacity key={i} onPress={() => { }} style={[styles.item, props.tabVal === data.id && styles.itemActive]} >
 

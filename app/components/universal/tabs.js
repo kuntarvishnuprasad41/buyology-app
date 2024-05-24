@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { TouchableOpacity, Text, View, StyleSheet, ScrollView, TabBarIOSItem } from 'react-native'
+import index from "../..";
 
 const Tabs = (props) => {
 
@@ -9,10 +10,10 @@ const Tabs = (props) => {
 
     return (
 
-        <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }}>
-            <View className="flex flex-row justify-between w-screen px-2">
+        <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }} className="h-15">
+            {props.heading ? <View className="flex flex-row justify-between w-screen px-2">
                 <Text className="font-bold text-black mb-1 p-2">New Arrivals</Text>
-            </View>
+            </View> : <></>}
 
             <ScrollView
                 horizontal
@@ -24,9 +25,11 @@ const Tabs = (props) => {
                 }}>
                 {props.data.map((data, i) => {
                     return (
-                        <TouchableOpacity key={i} onPress={() => props.settabData(data.title ? data.title : data.id ? data.id : data.name)} style={[styles.item, props.tabVal === data.id && styles.itemActive]} >
-                            <Text style={styles.tab}>{data.title ? data.title : data.name}</Text>
-                        </TouchableOpacity>
+                        <View key={i}>
+                            <TouchableOpacity key={i} onPress={() => props.settabData(data.title ? data.title : data.id ? data.id : data.name)} style={[styles.item, props.tabVal === data.id && styles.itemActive]} >
+                                <Text style={styles.tab}>{data.title ? data.title : data.name}</Text>
+                            </TouchableOpacity>
+                        </View>
                     )
                 })
 

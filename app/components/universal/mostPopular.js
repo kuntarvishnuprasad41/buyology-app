@@ -31,7 +31,7 @@ const MostPopular = (props) => {
                 }}>
                 {props.data.map((data, i) => {
                     return (
-                        <View className="flex justify-start  ">
+                        <View className="flex justify-start  " key={i}>
 
                             <TouchableOpacity key={i} onPress={() => props.settabData(data.title ? data.title : data.id ? data.id : data.name)} style={[styles.item, props.tabVal === data.id && styles.itemActive]} className="mt-[0px] p-1" >
 
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
 export default MostPopular;
 
 
-export const ProductCard = () => {
+const ProductCard = () => {
     return (
         <View style={styles.card} className="flex flex-col max-w-[170px]  items-center h-[290px] gap-0">
             <Image

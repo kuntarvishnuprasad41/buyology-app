@@ -31,7 +31,7 @@ const Aed1100 = (props) => {
                 }}>
                 {props.data.map((data, i) => {
                     return (
-                        <View className="flex justify-start  ">
+                        <View className="flex justify-start  " key={i}>
 
                             <TouchableOpacity key={i} onPress={() => props.settabData(data.title ? data.title : data.id ? data.id : data.name)} style={[styles.item, props.tabVal === data.id && styles.itemActive]} className="mt-[0px] p-1" >
 

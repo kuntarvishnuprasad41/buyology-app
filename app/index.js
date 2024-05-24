@@ -45,6 +45,7 @@ const index = () => {
                     data={popcat}
                     bgcolor="transparent"
                     tabVal={activeCat}
+                    heading={"true"}
                     settabData={categorySearch}
                 />
                 <ProductCard data={popcat}

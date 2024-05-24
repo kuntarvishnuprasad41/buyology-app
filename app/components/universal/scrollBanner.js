@@ -22,7 +22,7 @@ const ScrollBanner = (props) => {
             }}>
 
 
-            {Array.from({ length: 6 }).map((_, index) => <TouchableOpacity style={[{ width: props.width || 'auto', height: props.height || 'auto' }, !props.hero && { padding: 5 }]}>
+            {Array.from({ length: 6 }).map((_, index) => <TouchableOpacity style={[{ width: props.width || 'auto', height: props.height || 'auto' }, !props.hero && { padding: 5 }]} key={index}>
                 <Image source={{ uri: DEFAULT_IMAGE }}
                     // source={{ uri: props.image }}
                     style={{ width: '100%', height: '100%', resizeMode: 'cover', borderRadius: 14 }}
