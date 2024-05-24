@@ -23,7 +23,7 @@ const ProductsCard = (props) => {
                 showsHorizontalScrollIndicator={false}
                 contentContainerStyle={{
                     backgroundColor: props.bgcolor,
-                    height: 370
+                    height: 390
                 }}>
                 {props.data.map((data, i) => {
                     return (

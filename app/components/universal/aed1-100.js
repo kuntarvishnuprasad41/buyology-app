@@ -27,7 +27,7 @@ const Aed1100 = (props) => {
                 showsHorizontalScrollIndicator={false}
                 contentContainerStyle={{
                     backgroundColor: props.bgcolor,
-                    height: 370
+                    height: 450
                 }}>
                 {props.data.map((data, i) => {
                     return (

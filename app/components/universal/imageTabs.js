@@ -26,7 +26,7 @@ const CategoryTabs = (props) => {
                     return (
                         <View className="flex justify-center items-center content-center h-20">
 
-                            <TouchableOpacity key={i} onPress={() => props.settabData(data.title ? data.title : data.id ? data.id : data.name)} style={[styles.item, props.tabVal === data.id && styles.itemActive]} >
+                            <TouchableOpacity key={i} onPress={() => { }} style={[styles.item, props.tabVal === data.id && styles.itemActive]} >
 
 
                             </TouchableOpacity>

@@ -21,8 +21,8 @@ const index = () => {
     const [popcat, setpopCat] = useState([
         { "id": 0, "name": "All", "icon": "building-o", "colors": "#155C9E" },
         { "id": 6, "name": "Mobiles", "icon": "tshirt", "colors": "#155C9E" },
-        { "id": 6, "name": "Desktops", "icon": "mobile", "colors": "#155C9E" },
-        { 'id': 5, name: 'Accessories', Icon: 'desktop', colors: "#d4d4d4" },
+        { "id": 4, "name": "Desktops", "icon": "mobile", "colors": "#155C9E" },
+        { 'id': 5, name: 'Accessories', icon: 'desktop', colors: "#d4d4d4" },
         { "id": 11, "name": "Tablets", "icon": "cogs", "colors": "#155C9E" },
     ]);
     const [activeCat, setactiveCat] = useState("All");
