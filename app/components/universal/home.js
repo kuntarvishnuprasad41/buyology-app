@@ -1,15 +1,15 @@
 import { ScrollView, View } from "react-native";
-import LocationCard from "./components/universal/locationCard";
-import Header from "./components/universal/header";
-import MostPopular from "./components/universal/mostPopular";
-import OrderStatusCard from "./components/universal/orderStatusCard";
-import Banner from "./components/universal/banner";
-import CategoryTabs from "./components/universal/imageTabs";
-import Tabs from "./components/universal/tabs";
-import { ProductCard } from "./components/universal/cards";
-import Aed1100 from "./components/universal/aed1-100";
+import LocationCard from "./locationCard";
+import Header from "./header";
+import MostPopular from "./mostPopular";
+import OrderStatusCard from "./orderStatusCard";
+import Banner from "./banner";
+import CategoryTabs from "./imageTabs";
+import Tabs from "./tabs";
+import { ProductCard } from "./cards";
+import Aed1100 from "./aed1-100";
 
-import BottomNavBar from "./components/universal/bottomNavBar";
+import BottomNavBar from "./bottomNavBar";
 import { useState } from "react";
 
 function home() {

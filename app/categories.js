@@ -13,7 +13,7 @@ const categories = () => {
         { "id": 4, "name": "Mobiles", "icon": "mobile", "colors": "#155C9E" },
         { 'id': 5, name: 'Accessories', icon: 'desktop', colors: "#d4d4d4" },
         { "id": 11, "name": "Tablets", "icon": "cogs", "colors": "#155C9E" },
-    ]);
+    ]); sssss
     const [activeCat, setactiveCat] = useState("All");
     const categorySearch = (data) => {
         console.log(data);
