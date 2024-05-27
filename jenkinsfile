@@ -11,6 +11,9 @@ node('ssc'){
       stage('Build npm  panel'){
         sh """
             rm -rf /home/jenkins/deployment/buyology/buyology-app/*
+            cp -r * /home/jenkins/deployment/buyology/buyology-app/
+
+            
             npm install
             
             cp -r node_modules /home/jenkins/deployment/buyology/buyology-app
