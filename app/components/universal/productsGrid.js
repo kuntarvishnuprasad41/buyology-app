@@ -13,8 +13,8 @@ const ProductsGrid = () => {
         >
             {/* Replace <div> with <View> */}
             <View style={styles.gridContainer}>
-                {Array.from({ length: 5 }).map((index) => (
-                    <ProductCard key={index} key={index} />
+                {Array.from({ length: 5 }).map((_, index) => (
+                    <ProductCard key={index} />
                 ))}
             </View>
         </ScrollView>

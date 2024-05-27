@@ -11,6 +11,7 @@ import Aed1100 from './components/universal/aed1-100'
 import OrderStatusCard from './components/universal/orderStatusCard'
 import BottomNavBar from './components/universal/bottomNavBar'
 import LocationCard from './components/universal/locationCard'
+import Search from './search'
 // import Cards from './components/universal/cards'
 
 
@@ -32,7 +33,7 @@ const index = () => {
 
     return (
         <View>
-            <ScrollView >
+            {/* <ScrollView >
                 <LocationCard location="Sharjah, UAE" />
                 <Header />
                 <Banner width="100%" height={150} image="" />
@@ -69,8 +70,9 @@ const index = () => {
                     settabData={categorySearch} />
 
 
-            </ScrollView>
-            <BottomNavBar />
+            </ScrollView> */}
+            <Search />
+            {/* <BottomNavBar /> */}
         </View>
 
     )
