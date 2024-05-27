@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ba-2-demo",
-    "slug": "ba-2-demo",
+    "name": "buyology-app",
+    "slug": "buyology",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

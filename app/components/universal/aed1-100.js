@@ -3,8 +3,8 @@
 import Icon from 'react-native-vector-icons/FontAwesome';
 import React, { useState } from "react";
 import { TouchableOpacity, Image, Text, View, StyleSheet, ScrollView, TabBarIOSItem } from 'react-native'
-import DefaultImage from '../../../assets/temp/iPhone.png';
-const DEFAULT_IMAGE = Image.resolveAssetSource(DefaultImage).uri;
+// import DefaultImage from '../../../assets/temp/iPhone.png';
+// const DEFAULT_IMAGE = Image.resolveAssetSource(DefaultImage).uri;
 
 
 const Aed1100 = (props) => {
@@ -146,7 +146,7 @@ export const ProductCard = () => {
     return (
         <View style={styles.card} className="flex flex-col max-w-[170px]  items-center h-[360px] gap-0">
             <Image
-                source={{ uri: DEFAULT_IMAGE }} // Replace with your image URL
+                // source={{ uri: DEFAULT_IMAGE }} // Replace with your image URL
                 style={styles.image}
             />
             <View className="flex flex-row w-full justify-between content-center mb-3">

@@ -1,0 +1,28 @@
+node('ssc'){
+    env.NODEJS_HOME = "${tool 'nodejs'}"
+    // on linux / mac
+    env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
+  ws{
+     stage('Checking out the scm'){
+      deleteDir()
+    git branch: 'main',credentialsId: 'ridhav30', url: 'https://github.com/SharafStrategyConsultants/buyology-app'
+      }
+
+      stage('Build npm  panel'){
+        sh """
+            rm -rf /home/jenkins/deployment/buyology/buyology-app/*
+            npm install
+            
+            cp -r node_modules /home/jenkins/deployment/buyology/buyology-app
+            
+            cp package.json /home/jenkins/deployment/buyology/buyology-app
+            
+        """
+      }
+      stage('deploy all microservices'){
+        sh """
+            pm2 restart all 
+        """
+      }
+  }
+}
