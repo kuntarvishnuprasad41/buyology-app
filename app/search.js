@@ -1,6 +1,8 @@
 import { StyleSheet, Text, TextInput, View } from 'react-native'
 import React from 'react'
-import Icon from '@expo/vector-icons/Ionicons'
+// import Icon from '@expo/vector-icons/Ionicons'
+import Icon from 'react-native-vector-icons/Ionicons';
+
 import s from '../styles/mainStyle';
 
 const Search = () => {
@@ -79,7 +81,7 @@ export const SearchHistory = () => {
 
 const PopularSearches = () => {
     return <View className="">
-        {Array.from({ length: 5 }).map((_, index) => (
+        {/* {Array.from({ length: 5 }).map((_, index) => (
             <View className="bg-[#F2F2F2] w-[50px]">
 
                 <Text>Hey</Text>
@@ -87,6 +89,6 @@ const PopularSearches = () => {
             </View>
 
 
-        ))}
+        ))} */}
     </View>
 }

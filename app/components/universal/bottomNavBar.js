@@ -18,15 +18,15 @@ const BottomNavBar = () => {
                 </TouchableOpacity>
             </View>
             <View style={styles.navItem}>
-                <TouchableOpacity key={1} onPress={() => { router.replace('/categories'); }} className="mt-[0px] p-0 w-full flex items-center justify-center content-center" >
+                <TouchableOpacity key={1} onPress={() => { router.replace('/allCategories'); }} className="mt-[0px] p-0 w-full flex items-center justify-center content-center" >
                     <Icon name="th" size={24} color="#888" />
                     <Text style={styles.navText}>Category</Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.navItem}>
-                <TouchableOpacity key={1} onPress={() => { }} className="mt-[0px] p-0 w-full flex items-center justify-center content-center" >
+                <TouchableOpacity key={1} onPress={() => { router.replace('/productDetails') }} className="mt-[0px] p-0 w-full flex items-center justify-center content-center" >
                     <Icon name="heart" size={24} color="#888" />
-                    <Text style={styles.navText}>Wishlist</Text>
+                    <Text style={styles.navText}>ProductDetails</Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.navItem}>

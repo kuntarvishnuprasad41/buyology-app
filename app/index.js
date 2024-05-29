@@ -33,7 +33,7 @@ const index = () => {
 
     return (
         <View>
-            {/* <ScrollView >
+            <ScrollView >
                 <LocationCard location="Sharjah, UAE" />
                 <Header />
                 <Banner width="100%" height={150} image="" />
@@ -70,9 +70,9 @@ const index = () => {
                     settabData={categorySearch} />
 
 
-            </ScrollView> */}
-            <Search />
-            {/* <BottomNavBar /> */}
+            </ScrollView>
+            {/* <Search /> */}
+            <BottomNavBar />
         </View>
 
     )
