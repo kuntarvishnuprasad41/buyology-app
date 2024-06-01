@@ -30,7 +30,7 @@ const BottomNavBar = () => {
                 </TouchableOpacity>
             </View>
             <View style={styles.navItem}>
-                <TouchableOpacity key={1} onPress={() => { }} className="mt-[0px] p-0 w-full flex items-center justify-center content-center" >
+                <TouchableOpacity key={1} onPress={() => { router.replace('/Cart') }} className="mt-[0px] p-0 w-full flex items-center justify-center content-center" >
                     <Icon name="shopping-cart" size={24} color="#888" />
                     <Text style={styles.navText}>Cart</Text>
                 </TouchableOpacity>
