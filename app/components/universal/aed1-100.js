@@ -3,8 +3,8 @@
 import Icon from 'react-native-vector-icons/FontAwesome';
 import React, { useState } from "react";
 import { TouchableOpacity, Image, Text, View, StyleSheet, ScrollView, TabBarIOSItem } from 'react-native'
-import DefaultImage from '../../../assets/temp/iPhone.png';
-const DEFAULT_IMAGE = Image.resolveAssetSource(DefaultImage).uri;
+// import DefaultImage from '../../../assets/temp/iPhone.png';
+const DEFAULT_IMAGE = "http://dev.sscinitiatives.com:6002/assets/temp/iPhone.png"
 
 
 const Aed1100 = (props) => {
@@ -17,7 +17,7 @@ const Aed1100 = (props) => {
 
         <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }}>
             <View className="flex flex-row justify-between w-screen px-2">
-                <Text className="font-bold text-black mb-1 p-2 text-[20px]">Most Popular</Text>
+                <Text className="font-bold text-black mb-1 p-2 text-[20px]">AED 1-100</Text>
                 <Text className="font-bold text-[#402F75] mb-1 p-2">See All</Text>
             </View>
 

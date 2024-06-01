@@ -3,8 +3,8 @@
 import Icon from 'react-native-vector-icons/FontAwesome';
 import React, { useState } from "react";
 import { TouchableOpacity, Image, Text, View, StyleSheet, ScrollView, TabBarIOSItem } from 'react-native'
-import DefaultImage from '../../../assets/temp/iPhone.png';
-const DEFAULT_IMAGE = Image.resolveAssetSource(DefaultImage).uri;
+// import DefaultImage from '../../../assets/temp/iPhone.png';
+const DEFAULT_IMAGE = "http://dev.sscinitiatives.com:6002/assets/temp/iPhone.png";
 
 
 const MostPopular = (props) => {
