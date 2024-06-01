@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, Image, TouchableOpacity, ScrollView, TextInput } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { styled } from 'nativewind';
+import CheckOutDetail from './CheckOutDetail';
 
 const CartDetail = () => {
     const [quantity, setQuantity] = useState(1);
@@ -111,6 +112,8 @@ const CartDetail = () => {
             <TouchableOpacity className="py-4 bg-purple-600 rounded-full">
                 <Text className="text-center text-white font-bold">BUY NOW</Text>
             </TouchableOpacity>
+
+            <CheckOutDetail />
         </ScrollView>
     );
 };
