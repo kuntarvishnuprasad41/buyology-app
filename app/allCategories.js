@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   FlatList,
 } from "react-native";
+import BottomNavBar from "./components/universal/bottomNavBar";
 
 const AllCategories = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -65,6 +66,7 @@ const AllCategories = () => {
       <TouchableOpacity className="rounded-md bg-gray-200 px-4 py-2 mt-4 items-center">
         <Text>Trending Items</Text>
       </TouchableOpacity>
+      <BottomNavBar />
     </View>
   );
 };

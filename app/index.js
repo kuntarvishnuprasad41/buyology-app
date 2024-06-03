@@ -12,6 +12,7 @@ import OrderStatusCard from './components/universal/orderStatusCard'
 import BottomNavBar from './components/universal/bottomNavBar'
 import LocationCard from './components/universal/locationCard'
 import Search from './search'
+import { styled } from 'nativewind'
 // import Cards from './components/universal/cards'
 
 
@@ -78,6 +79,6 @@ const index = () => {
     )
 }
 
-export default index
+export default styled(index);
 
 const styles = StyleSheet.create({})

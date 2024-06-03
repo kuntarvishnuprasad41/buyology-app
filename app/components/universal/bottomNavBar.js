@@ -4,13 +4,20 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { NativeWindStyleSheet } from 'nativewind';
 import { TouchableOpacity } from 'react-native';
 import { router } from 'expo-router';
+import { useNavigation } from 'expo-router';
+
 
 
 const BottomNavBar = () => {
+    const navigation = useNavigation();
+
+    const handleIndexNavigation = () => {
+        navigation.navigate('/', { replace: true });
+    };
     return (
         <View style={styles.container}>
             <View style={styles.navItem}>
-                <TouchableOpacity key={1} onPress={() => { router.replace('./index'); }} className="mt-[0px] p-0 w-full flex items-center justify-center content-center" >
+                <TouchableOpacity key={1} onPress={() => { handleIndexNavigation }} className="mt-[0px] p-0 w-full flex items-center justify-center content-center" >
 
                     <Icon name="home" size={24} color="#4A148C" />
                     <Text style={[styles.navText, { color: '#4A148C' }]}>Home</Text>
