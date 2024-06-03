@@ -12,8 +12,10 @@ const BottomNavBar = () => {
     const navigation = useNavigation();
 
     const handleIndexNavigation = () => {
-        navigation.navigate('/', { replace: true });
+        navigation.navigate('/', { replace: true }); // Navigate to root (/) with replace: true
     };
+
+
     return (
         <View style={styles.container}>
             <View style={styles.navItem}>

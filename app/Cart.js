@@ -28,7 +28,6 @@ const CartDetail = () => {
             originalPrice: 5099,
             discount: '15%',
             image: 'http://dev.sscinitiatives.com:6002/assets/temp/iPhone.png', // Replace with actual image URL
-
             certified: true,
         },
     ];
