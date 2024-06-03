@@ -48,7 +48,7 @@ const CartDetail = () => {
     ];
 
     return (
-        <View className="h-full">
+        <ScrollView className="h-full">
             <ScrollView className="flex-1 bg-white p-4">
                 <View className="flex flex-row items-center justify-between mb-4">
                     <TouchableOpacity>
@@ -117,7 +117,7 @@ const CartDetail = () => {
                 <CheckOutDetail />
             </ScrollView>
             <BottomNavBar />
-        </View>
+        </ScrollView>
     );
 };
 
