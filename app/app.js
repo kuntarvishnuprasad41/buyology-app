@@ -46,7 +46,7 @@ const MyTabs = () => {
                 }}
             />
 
-            <Tab.Screen name="Profile"
+            <Tab.Screen name="account"
                 options={{
                     tabBarIcon: ({ color }) => (
                         <Icon name="person-circle-outline" color={color} size={20} />
