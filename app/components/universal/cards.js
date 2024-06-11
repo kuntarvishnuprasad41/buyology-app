@@ -67,11 +67,11 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#ddd',
         padding: 10,
-        margin: 10,
+        margin: 0,
         backgroundColor: '#fff',
     },
     image: {
-        width: 167,
+        width: 200,
         height: 192,
         resizeMode: 'cover',
         borderRadius: 8,
@@ -89,11 +89,12 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 16,
         fontWeight: 'bold',
-        marginVertical: 8,
+
     },
     priceContainer: {
         flexDirection: 'row',
         alignItems: 'center',
+
     },
     currentPrice: {
         fontSize: 18,
@@ -120,12 +121,12 @@ const styles = StyleSheet.create({
         borderRadius: 4,
     },
     certifiedContainer: {
-        marginTop: 2,
+        marginTop: 0,
 
         position: 'relative',
 
         backgroundColor: '#ffeb3b',
-        padding: 4,
+        padding: 2,
         width: 60,
         borderRadius: 40,
     },
@@ -141,7 +142,7 @@ export default ProductsCard;
 
 export const ProductCard = () => {
     return (
-        <View style={styles.card} className="flex flex-col max-w-[170px]  items-center h-[360px] gap-0">
+        <View style={styles.card} className="flex flex-col max-w-[200px]  items-start content-start justify-start h-[380px] gap-0">
             <Image
                 source={{ uri: DEFAULT_IMAGE }} // Replace with your image URL
                 style={styles.image}
@@ -158,10 +159,10 @@ export const ProductCard = () => {
                 </View>
             </View>
 
-            <View className="flex gap-2 mb-2">
+            <View className="flex gap-2  ">
                 <Text style={styles.title} className="line-clamp-2" >Apple iPhone 15 Pro Max 256GB Natural...</Text>
-                <View style={styles.priceContainer}>
-                    <Text style={styles.currentPrice}>AED 4,299</Text>
+                <View style={styles.priceContainer} className="-mt-5">
+                    <Text style={styles.currentPrice} >AED 4,299</Text>
                     <Text style={styles.originalPrice}>5,099</Text>
                     <Text style={styles.discount}>15%</Text>
                 </View>

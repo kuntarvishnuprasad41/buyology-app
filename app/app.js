@@ -11,6 +11,7 @@ import Shop from './index.js';
 import Saved from './index.js';
 import Profile from './index.js';
 import AccountStacks from './index.js';
+import HomePage from './HomePage.js';
 const Tab = createBottomTabNavigator();
 const MyTabs = () => {
 
@@ -23,7 +24,7 @@ const MyTabs = () => {
             }}
 
         >
-            <Tab.Screen name="Home" component={Home}
+            <Tab.Screen name="Home" component={HomePage}
                 options={{
                     tabBarIcon: ({ color }) => (
                         <Icon name="home" color={color} size={20} />
