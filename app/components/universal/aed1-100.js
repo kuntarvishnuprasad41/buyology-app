@@ -3,6 +3,7 @@
 import Icon from 'react-native-vector-icons/FontAwesome';
 import React, { useState } from "react";
 import { TouchableOpacity, Image, Text, View, StyleSheet, ScrollView, TabBarIOSItem } from 'react-native'
+import { ProductCard } from './cards';
 // import DefaultImage from '../../../assets/temp/iPhone.png';
 const DEFAULT_IMAGE = "http://dev.sscinitiatives.com:6002/assets/temp/iPhone.png"
 
@@ -27,7 +28,7 @@ const Aed1100 = (props) => {
                 showsHorizontalScrollIndicator={false}
                 contentContainerStyle={{
                     backgroundColor: props.bgcolor,
-                    height: 450
+                    // height: 450
                 }}>
                 {props.data.map((data, i) => {
                     return (
@@ -142,41 +143,41 @@ const styles = StyleSheet.create({
 
 export default Aed1100;
 
-export const ProductCard = () => {
-    return (
-        <View style={styles.card} className="flex flex-col max-w-[170px]  items-center h-[360px] gap-0">
-            <Image
-                source={{ uri: DEFAULT_IMAGE }} // Replace with your image URL
-                style={styles.image}
-            />
-            <View className="flex flex-row w-full justify-between content-center mb-3">
-                <View style={styles.ratingContainer} className="flex items-center content-center justify-center">
-                    <Text style={styles.ratingText}>4.6</Text>
-                    <Icon name="star" size={16} color="#4caf50" />
-                </View>
-                <View>
-                    <TouchableOpacity style={styles.cartButton}>
-                        <Icon name="shopping-cart" size={16} color="#fff" />
-                    </TouchableOpacity>
-                </View>
-            </View>
+// export const ProductCard = () => {
+//     return (
+//         <View style={styles.card} className="flex flex-col max-w-[170px]  items-center h-[360px] gap-0">
+//             <Image
+//                 source={{ uri: DEFAULT_IMAGE }} // Replace with your image URL
+//                 style={styles.image}
+//             />
+//             <View className="flex flex-row w-full justify-between content-center mb-3">
+//                 <View style={styles.ratingContainer} className="flex items-center content-center justify-center">
+//                     <Text style={styles.ratingText}>4.6</Text>
+//                     <Icon name="star" size={16} color="#4caf50" />
+//                 </View>
+//                 <View>
+//                     <TouchableOpacity style={styles.cartButton}>
+//                         <Icon name="shopping-cart" size={16} color="#fff" />
+//                     </TouchableOpacity>
+//                 </View>
+//             </View>
 
-            <View className="flex gap-2 mb-2">
-                <Text style={styles.title} className="line-clamp-2" >Apple iPhone 15 Pro Max 256GB Natural...</Text>
-                <View style={styles.priceContainer}>
-                    <Text style={styles.currentPrice}>AED 4,299</Text>
-                    <Text style={styles.originalPrice}>5,099</Text>
-                    <Text style={styles.discount}>15%</Text>
-                </View>
+//             <View className="flex gap-2 mb-2">
+//                 <Text style={styles.title} className="line-clamp-2" >Apple iPhone 15 Pro Max 256GB Natural...</Text>
+//                 <View style={styles.priceContainer}>
+//                     <Text style={styles.currentPrice}>AED 4,299</Text>
+//                     <Text style={styles.originalPrice}>5,099</Text>
+//                     <Text style={styles.discount}>15%</Text>
+//                 </View>
 
-                <View style={styles.certifiedContainer}>
-                    <Text style={styles.certifiedText}>&nbsp;Certified</Text>
-                </View>
-            </View>
+//                 <View style={styles.certifiedContainer}>
+//                     <Text style={styles.certifiedText}>&nbsp;Certified</Text>
+//                 </View>
+//             </View>
 
-        </View>
-    );
-};
+//         </View>
+//     );
+// };
 
 
 
