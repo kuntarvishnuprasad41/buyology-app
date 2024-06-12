@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import React, { useState } from "react";
 import { TouchableOpacity, Image, Text, View, StyleSheet, ScrollView, TabBarIOSItem } from 'react-native'
 // import DefaultImage from '../../../assets/temp/iPhone.png';
-const DEFAULT_IMAGE = "http://dev.sscinitiatives.com:6002/assets/temp/iPhone.png";
+const DEFAULT_IMAGE = "http://dev.sscinitiatives.com:6002/assets/temp/iPhoneLive.png";
 
 
 const MostPopular = (props) => {
@@ -27,15 +27,15 @@ const MostPopular = (props) => {
                 showsHorizontalScrollIndicator={false}
                 contentContainerStyle={{
                     backgroundColor: props.bgcolor,
-                    height: 300
+                    // height: 300
                 }}>
                 {props.data.map((data, i) => {
                     return (
                         <View className="flex justify-start  " key={i}>
 
-                            <TouchableOpacity key={i} onPress={() => props.settabData(data.title ? data.title : data.id ? data.id : data.name)} style={[styles.item, props.tabVal === data.id && styles.itemActive]} className="mt-[0px] p-1" >
+                            <TouchableOpacity key={i} onPress={() => props.settabData(data.title ? data.title : data.id ? data.id : data.name)} className="mt-[0px] p-0" >
 
-                                <ProductCard />
+                                <MostPopularCard />
 
                             </TouchableOpacity>
 
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         borderWidth: 1,
         borderColor: '#ddd',
-        padding: 10,
+        // padding: 10,
         margin: 10,
         backgroundColor: '#fff',
     },
@@ -128,9 +128,9 @@ const styles = StyleSheet.create({
 
         position: 'relative',
 
-        backgroundColor: '#ffeb3b',
+        backgroundColor: '#FFE5A0',
         padding: 4,
-        width: 60,
+        width: 80,
         borderRadius: 40,
     },
     certifiedText: {
@@ -143,36 +143,84 @@ const styles = StyleSheet.create({
 export default MostPopular;
 
 
-const ProductCard = () => {
+export const MostPopularCard = () => {
     return (
-        <View style={styles.card} className="flex flex-col max-w-[170px]  items-center h-[290px] gap-0">
-            <Image
-                source={{ uri: DEFAULT_IMAGE }} // Replace with your image URL
-                style={styles.image}
-            />
-            <View className="flex flex-row w-full justify-between content-center mb-3">
-                <View style={styles.ratingContainer} className="flex items-center content-center justify-center">
-                    <Text style={styles.ratingText}>4.6</Text>
-                    <Icon name="star" size={16} color="#4caf50" />
+
+        // <View className="flex flex-col gap-2">
+        //     <Text>Hey</Text>
+        //     <Text>Hello</Text>
+        // </View>
+
+        <View style={styles.card} className="flex flex-col max-w-[200px]  items-start content-start justify-start  gap-0 overflow-hidden">
+            <View className="w-full h-[200px] rounded-t-[8px]">
+                <Image
+                    source={{ uri: DEFAULT_IMAGE }} // Replace with your image URL
+                    // style={styles.image}
+                    className="w-full h-[200px]  "
+                />
+            </View>
+
+            <View className="flex p-3 flex-col   bg-white ">
+                <Text className=" line-clamp-2 text-[16px] font-medium mb-2" >Apple iPhone 15 Pro Max 256GB Natural...</Text>
+                {/* <View className=" flex flex-row justify-start mb-2">
+                    <Text style={styles.currentPrice} >AED 4,299</Text>
+                    <Text style={styles.originalPrice}>5,099</Text>
+                    <Text style={styles.discount}>15%</Text>
+                </View> */}
+                <View style={styles.certifiedContainer}>
+                    <Text style={styles.certifiedText}>&nbsp;Sold Out 145</Text>
                 </View>
-                <View>
+            </View>
+
+            <View className=" flex flex-row w-full h-[360px] justify-between   absolute p-2 mt-[300px]  ">
+                <View className="flex items-center content-center justify-center">
+                    <View className="flex flex-row  bg-white rounded-[30px] w-[60px] h-[24px]  justify-center content-center items-center">
+                        <Text className="text-[#4caf50] mr-1 ">4.6</Text>
+                        <Icon name="star" size={12} color="#4caf50" />
+                    </View>
+                </View>
+                {/* <View>
                     <TouchableOpacity style={styles.cartButton}>
                         <Icon name="shopping-cart" size={16} color="#fff" />
                     </TouchableOpacity>
-                </View>
+                </View> */}
             </View>
-
-            <View className="flex gap-2 mb-2 justify-start items-start content-start w-full">
-
-
-                <View style={styles.certifiedContainer}>
-                    <Text style={styles.certifiedText}>&nbsp;Sold 145</Text>
-                </View>
-            </View>
-
         </View>
     );
 };
+
+
+
+// const MostPopularCard = () => {
+//     return (
+//         <View style={styles.card} className="flex flex-col max-w-[170px]  items-center h-[290px] gap-0">
+//             <Image
+//                 source={{ uri: DEFAULT_IMAGE }} // Replace with your image URL
+//                 style={styles.image}
+//             />
+//             <View className="flex flex-row w-full justify-between content-center mb-3">
+//                 <View style={styles.ratingContainer} className="flex items-center content-center justify-center">
+//                     <Text style={styles.ratingText}>4.6</Text>
+//                     <Icon name="star" size={16} color="#4caf50" />
+//                 </View>
+//                 <View>
+//                     <TouchableOpacity style={styles.cartButton}>
+//                         <Icon name="shopping-cart" size={16} color="#fff" />
+//                     </TouchableOpacity>
+//                 </View>
+//             </View>
+
+//             <View className="flex gap-2 mb-2 justify-start items-start content-start w-full">
+
+
+//                 <View style={styles.certifiedContainer}>
+//                     <Text style={styles.certifiedText}>&nbsp;Sold 145</Text>
+//                 </View>
+//             </View>
+
+//         </View>
+//     );
+// };
 
 
 

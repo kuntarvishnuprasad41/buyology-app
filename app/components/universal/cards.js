@@ -157,7 +157,7 @@ export const ProductCard = () => {
                 />
             </View>
 
-            <View className="flex p-3m flex-col   bg-white ">
+            <View className="flex p-3 flex-col   bg-white ">
                 <Text className=" line-clamp-2 text-[16px] font-medium mb-2" >Apple iPhone 15 Pro Max 256GB Natural...</Text>
                 <View className=" flex flex-row justify-start mb-2">
                     <Text style={styles.currentPrice} >AED 4,299</Text>
