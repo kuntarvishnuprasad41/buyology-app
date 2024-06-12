@@ -15,7 +15,7 @@ const ProductsCard = (props) => {
 
     return (
 
-        <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }}>
+        <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }} className="mb-[16px]">
 
             <ScrollView
                 horizontal
@@ -148,10 +148,10 @@ export const ProductCard = () => {
         //     <Text>Hello</Text>
         // </View>
 
-        <View style={styles.card} className="flex flex-col max-w-[200px]  items-start content-start justify-start  gap-0 overflow-hidden">
+        <View style={styles.card} className="flex flex-col max-w-[200px]  items-start content-start justify-start  gap-0 overflow-hidden  ">
             <View className="w-full h-[200px] rounded-t-[8px]">
                 <Image
-                    source={{ uri: DEFAULT_IMAGE }} // Replace with your image URL
+                    source={{ uri: DEFAULT_IMAGE }}
                     // style={styles.image}
                     className="w-full h-[200px]  "
                 />

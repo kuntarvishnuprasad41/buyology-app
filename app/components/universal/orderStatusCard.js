@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 const OrderStatusCard = () => {
     return (
-        <View className="bg-[#F7F7FA]">
+        <View className=" p-[10px] bg-[#F7F7FA] mb-[16px]">
 
             <TouchableOpacity key={1} onPress={() => props.settabData(data.title ? data.title : data.id ? data.id : data.name)} style={styles.card} >
 

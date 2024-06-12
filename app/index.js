@@ -33,8 +33,8 @@ const index = () => {
     }
 
     return (
-        <View>
-            <ScrollView >
+        <View className="bg-white flex ">
+            <ScrollView className="  ">
                 <LocationCard location="Sharjah, UAE" />
                 <Header />
                 <Banner width="100%" height={150} image="" />

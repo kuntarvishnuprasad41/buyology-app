@@ -15,7 +15,7 @@ const MostPopular = (props) => {
 
     return (
 
-        <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }}>
+        <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }} className="mb-[16px]">
             <View className="flex flex-row justify-between w-screen px-2">
                 <Text className="font-bold text-black mb-1 p-2 text-[20px]">Most Popular</Text>
                 <Text className="font-bold text-[#402F75] mb-1 p-2">See All</Text>
@@ -130,7 +130,8 @@ const styles = StyleSheet.create({
 
         backgroundColor: '#FFE5A0',
         padding: 4,
-        width: 80,
+        // width: 'full',
+
         borderRadius: 40,
     },
     certifiedText: {
@@ -151,7 +152,7 @@ export const MostPopularCard = () => {
         //     <Text>Hello</Text>
         // </View>
 
-        <View style={styles.card} className="flex flex-col max-w-[200px]  items-start content-start justify-start  gap-0 overflow-hidden">
+        <View style={styles.card} className="flex flex-col max-w-[200px]  items-start content-start justify-start  gap-0 overflow-hidden ">
             <View className="w-full h-[200px] rounded-t-[8px]">
                 <Image
                     source={{ uri: DEFAULT_IMAGE }} // Replace with your image URL
@@ -167,8 +168,8 @@ export const MostPopularCard = () => {
                     <Text style={styles.originalPrice}>5,099</Text>
                     <Text style={styles.discount}>15%</Text>
                 </View> */}
-                <View style={styles.certifiedContainer}>
-                    <Text style={styles.certifiedText}>&nbsp;Sold Out 145</Text>
+                <View style={styles.certifiedContainer} className="w-full px-2">
+                    <Text style={styles.certifiedText}>&nbsp;Sold 145</Text>
                 </View>
             </View>
 

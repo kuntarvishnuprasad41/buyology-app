@@ -16,7 +16,7 @@ const Aed1100 = (props) => {
 
     return (
 
-        <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }}>
+        <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }} className="mb-[46px]">
             <View className="flex flex-row justify-between w-screen px-2">
                 <Text className="font-bold text-black mb-1 p-2 text-[20px]">AED 1-100</Text>
                 <Text className="font-bold text-[#402F75] mb-1 p-2">See All</Text>
@@ -34,7 +34,7 @@ const Aed1100 = (props) => {
                     return (
                         <View className="flex justify-start  " key={i}>
 
-                            <TouchableOpacity key={i} onPress={() => props.settabData(data.title ? data.title : data.id ? data.id : data.name)} style={[styles.item, props.tabVal === data.id && styles.itemActive]} className="mt-[0px] p-1" >
+                            <TouchableOpacity key={i} onPress={() => props.settabData(data.title ? data.title : data.id ? data.id : data.name)} style={[styles.item, props.tabVal === data.id && styles.itemActive]} className="mt-[0px] p-1 mb-12" >
 
                                 <ProductCard />
 
