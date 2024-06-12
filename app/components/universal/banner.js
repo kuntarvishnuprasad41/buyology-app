@@ -12,7 +12,7 @@ const Banner = (props) => {
     // const DEFAULT_IMAGE = props.image == "a" ? Image.resolveAssetSource(DefaultImage1).uri : Image.resolveAssetSource(DefaultImage).uri;
     const DEFAULT_IMAGE = props.image == "a" ? "http://dev.sscinitiatives.com:6002/assets/temp/whatisrefurbished-banner.png" : "http://dev.sscinitiatives.com:6002/assets/temp/adaptive-icon.png";
     return (
-        <TouchableOpacity style={[{ width: props.width || 'auto', height: props.height || 'auto' }, !props.hero && { padding: 5 }]} className="mb-[16px]">
+        <TouchableOpacity style={[{ width: props.width || 'auto', height: props.height || 'auto' }, !props.hero && { padding: 5 }]} className="mb-[26px] ">
             <Image
                 source={{ uri: DEFAULT_IMAGE }}
                 // source={{ uri: props.image }}

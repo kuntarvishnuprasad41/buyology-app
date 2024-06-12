@@ -5,7 +5,7 @@ import { MarkerIcon } from 'react-native-heroicons/solid';
 
 const LocationCard = ({ location }) => {
     return (
-        <View className="bg-white rounded-lg p-4 shadow-sm flex-row justify-between items-center mt-10">
+        <View className="  rounded-lg p-4 shadow-sm flex-row justify-between items-center mt-10">
             <View className="flex-row items-center">
                 <View className="mr-2">
                     {/* <LocationMarkerIcon size={20} color="gray" /> */}

@@ -10,9 +10,9 @@ const Tabs = (props) => {
 
     return (
 
-        <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }} className="h-15">
+        <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }} className="h-15 ">
             {props.heading ? <View className="flex flex-row justify-between w-screen px-2">
-                <Text className="font-bold text-black mb-1 p-2">New Arrivals</Text>
+                <Text className="font-bold text-black mb-1 pb-0 text-[17px]">New Arrivals</Text>
             </View> : <></>}
 
             <ScrollView
@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
         borderRadius: 100,
         borderWidth: 1,
         borderColor: '	rgba(211,211,211,0.5)',
-        marginLeft: 10,
-        marginRight: 8,
+        marginLeft: 8,
+        // marginRight: 8,
         marginTop: 'auto',
         marginBottom: 'auto'
     },

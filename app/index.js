@@ -26,6 +26,7 @@ const index = () => {
         { "id": 4, "name": "Desktops", "icon": "mobile", "colors": "#155C9E" },
         { 'id': 5, name: 'Accessories', icon: 'desktop', colors: "#d4d4d4" },
         { "id": 11, "name": "Tablets", "icon": "cogs", "colors": "#155C9E" },
+        { "id": 12, "name": "Tablets", "icon": "cogs", "colors": "#155C9E" },
     ]);
     const [activeCat, setactiveCat] = useState("All");
     const categorySearch = (data) => {
@@ -33,12 +34,15 @@ const index = () => {
     }
 
     return (
-        <View className="bg-white flex ">
-            <ScrollView className="  ">
-                <LocationCard location="Sharjah, UAE" />
-                <Header />
-                <Banner width="100%" height={150} image="" />
+        <View className="bg-white  flex ">
+            <ScrollView className="   ">
+                <View className="bg-[#F7F7FA]">
+                    <LocationCard location="Sharjah, UAE" />
+                    <Header />
+                    <Banner width="100%" height={150} image="" />
 
+
+                </View>
                 <CategoryTabs data={popcat}
                     bgcolor="transparent"
                     tabVal={activeCat}

@@ -9,9 +9,9 @@ const CategoryTabs = (props) => {
 
     return (
 
-        <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }}>
-            <View className="flex flex-row justify-between w-screen px-2">
-                <Text className="font-bold text-black mb-1 p-2">Category</Text>
+        <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 16 }} className="mb-[16px]" >
+            <View className="flex flex-row justify-between w-screen px-2 pb-0">
+                <Text className="font-bold text-black mb-1 p-2 text-[17px]">Category</Text>
                 <Text className="font-bold text-[#402F75] mb-1 p-2">See All</Text>
             </View>
             <ScrollView
@@ -59,8 +59,8 @@ const styles = StyleSheet.create({
         borderRadius: 100,
         borderWidth: 1,
         borderColor: '	rgba(211,211,211,0.5)',
-        marginLeft: 10,
-        marginRight: 8,
+        marginLeft: 8,
+        // marginRight: 8,
         marginBottom: 1,
         height: 70,
         width: 70
