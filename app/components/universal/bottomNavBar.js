@@ -19,7 +19,7 @@ const BottomNavBar = () => {
     return (
         <View style={styles.container}>
             <View style={styles.navItem}>
-                <TouchableOpacity key={1} onPress={() => { handleIndexNavigation }} className="mt-[0px] p-0 w-full flex items-center justify-center content-center" >
+                <TouchableOpacity key={1} onPress={() => { router.replace('/HomePage'); }} className="mt-[0px] p-0 w-full flex items-center justify-center content-center" >
 
                     <Icon name="home" size={24} color="#4A148C" />
                     <Text style={[styles.navText, { color: '#4A148C' }]}>Home</Text>

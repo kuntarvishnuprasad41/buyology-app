@@ -1,13 +1,15 @@
 import { StyleSheet, Text, TextInput, View } from 'react-native'
 import React from 'react'
+import { router } from 'expo-router';
 // import Icon from '@expo/vector-icons/Ionicons'
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import s from '../styles/mainStyle';
+import BottomNavBar from './components/universal/bottomNavBar';
 
 const Search = () => {
     return (
-        <View className="bg-white h-screen">
+        <View className="bg-white h-full">
             <View className="bg-white h-24 w-screen flex justify-end p-5 ">
                 <Icon name="arrow-back" size={18} />
                 <View style={[s.row, s.pd10]}>
@@ -42,6 +44,7 @@ const Search = () => {
 
             <SearchHistory />
             <PopularSearches />
+            <BottomNavBar />
         </View>
     )
 }
@@ -57,9 +60,9 @@ export const SearchHistory = () => {
             {Array.from({ length: 5 }).map((_, index) => (
                 <View className="">
 
-                    <View className="flex flex-row justify-between px-5">
-                        <Text className=" text-[14px]">Some random search history</Text>
-                        <Icon name="arrow-right-up" size={18} />
+                    <View className="flex flex-row justify-between px-5" >
+                        <Text className=" text-[14px]" onPress={() => { router.replace('/SearchGrid'); }}>iPhone</Text>
+                        {/* <Icon name="arrow-right-up" size={18} /> */}
                     </View>
 
                     <View

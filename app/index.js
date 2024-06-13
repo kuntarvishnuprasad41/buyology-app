@@ -24,7 +24,7 @@ const index = () => {
         { "id": 0, "name": "All", "icon": "building-o", "colors": "#155C9E" },
         { "id": 6, "name": "Mobiles", "icon": "tshirt", "colors": "#155C9E" },
         { "id": 4, "name": "Desktops", "icon": "mobile", "colors": "#155C9E" },
-        { 'id': 5, name: 'Accessories', icon: 'desktop', colors: "#d4d4d4" },
+        { 'id': 5, "name": 'Accessories', "icon": 'desktop', "colors": "#d4d4d4" },
         { "id": 11, "name": "Tablets", "icon": "cogs", "colors": "#155C9E" },
         { "id": 12, "name": "Tablets", "icon": "cogs", "colors": "#155C9E" },
     ]);
@@ -34,7 +34,7 @@ const index = () => {
     }
 
     return (
-        <View className="bg-white  flex ">
+        <View className="bg-white  flex   ">
             <ScrollView className="   ">
                 <View className="bg-[#F7F7FA]">
                     <LocationCard location="Sharjah, UAE" />
@@ -51,7 +51,7 @@ const index = () => {
                     data={popcat}
                     bgcolor="transparent"
                     tabVal={activeCat}
-                    heading={"true"}
+                    heading={"New Arrivals"}
                     settabData={categorySearch}
                 />
                 <ProductCard data={popcat}

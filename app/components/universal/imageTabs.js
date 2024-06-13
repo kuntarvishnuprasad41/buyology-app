@@ -11,7 +11,7 @@ const CategoryTabs = (props) => {
 
         <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 16 }} className="mb-[16px]" >
             <View className="flex flex-row justify-between w-screen px-2 pb-0">
-                <Text className="font-bold text-black mb-1 p-2 text-[17px]">Category</Text>
+                <Text className="font-bold text-black mb-1  py-2 text-[17px]">Category</Text>
                 <Text className="font-bold text-[#402F75] mb-1 p-2">See All</Text>
             </View>
             <ScrollView

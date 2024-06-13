@@ -12,7 +12,7 @@ const Tabs = (props) => {
 
         <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }} className="h-15 ">
             {props.heading ? <View className="flex flex-row justify-between w-screen px-2">
-                <Text className="font-bold text-black mb-1 pb-0 text-[17px]">New Arrivals</Text>
+                <Text className="font-bold text-black mb-1 pb-0 text-[17px]">{props.heading}</Text>
             </View> : <></>}
 
             <ScrollView
