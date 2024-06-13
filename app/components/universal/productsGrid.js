@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
 export const SearchCard = () => {
 
     const DEFAULT_IMAGE = "http://dev.sscinitiatives.com:6002/assets/temp/iPhoneLive.png"
-    const wishlist_b = ""
+    const wishlist_b = "http://dev.sscinitiatives.com:6002/assets/icons/wishlist-b.svg"
     return (
 
         // <View className="flex flex-col gap-2">
@@ -209,7 +209,7 @@ export const SearchCard = () => {
                     <TouchableOpacity style={styles.wishlistButton}>
                         <View>
                             {/* <Icon name="heart" size={16} color="#000" /> */}
-                            <Image source={{ uri:  }} />
+                            <Image source={{ uri: wishlist_b }} className="w-[30px] h-[30px]" />
                         </View>
                     </TouchableOpacity>
                 </View>
