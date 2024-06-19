@@ -18,8 +18,8 @@ const Aed1100 = (props) => {
 
         <View style={{ flex: 1, flexDirection: 'col', alignItems: 'flex-start', paddingTop: 5 }} className="mb-[46px]">
             <View className="flex flex-row justify-between w-screen px-2">
-                <Text className="font-bold text-black mb-1 p-2 text-[20px]">AED 1-100</Text>
-                <Text className="font-bold text-[#402F75] mb-1 p-2">See All</Text>
+                <Text className="font-bold text-black mb-1   text-[20px]">AED 1-100</Text>
+                <Text className="font-bold text-[#402F75] mb-1 px-2">See All</Text>
             </View>
 
             <ScrollView

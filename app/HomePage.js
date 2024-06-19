@@ -51,7 +51,7 @@ const HomePage = () => {
                     data={popcat}
                     bgcolor="transparent"
                     tabVal={activeCat}
-                    heading={"true"}
+                    heading={"New Arrivals"}
                     settabData={categorySearch}
                 />
                 <ProductCard data={popcat}

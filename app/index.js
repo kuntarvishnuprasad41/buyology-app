@@ -13,6 +13,7 @@ import BottomNavBar from './components/universal/bottomNavBar'
 import LocationCard from './components/universal/locationCard'
 import Search from './search'
 import { styled } from 'nativewind'
+import HomePage from './HomePage'
 // import Cards from './components/universal/cards'
 
 
@@ -34,55 +35,57 @@ const index = () => {
     }
 
     return (
-        <View className="bg-white  flex   ">
-            <ScrollView className="   ">
-                <View className="bg-[#F7F7FA]">
-                    <LocationCard location="Sharjah, UAE" />
-                    <Header />
-                    <Banner width="100%" height={150} image="" />
-
-
-                </View>
-                <CategoryTabs data={popcat}
-                    bgcolor="transparent"
-                    tabVal={activeCat}
-                    settabData={categorySearch} />
-                <Tabs
-                    data={popcat}
-                    bgcolor="transparent"
-                    tabVal={activeCat}
-                    heading={"New Arrivals"}
-                    settabData={categorySearch}
-                />
-                <ProductCard data={popcat}
-                    bgcolor="transparent"
-                    tabVal={activeCat}
-                    settabData={categorySearch}
-                />
-
-                <Banner width="100%" height={150} image="a" />
-
-                <MostPopular data={popcat}
-                    bgcolor="transparent"
-                    tabVal={activeCat}
-                    settabData={categorySearch} />
-
-                <OrderStatusCard />
-
-                <Aed1100 data={popcat}
-                    bgcolor="transparent"
-                    tabVal={activeCat}
-                    settabData={categorySearch} />
-
-
-            </ScrollView>
-            {/* <Search /> */}
-            <BottomNavBar />
-        </View>
-
+        <HomePage />
     )
 }
 
 export default styled(index);
 
 const styles = StyleSheet.create({})
+
+
+{/* <View className="bg-white  flex   ">
+<ScrollView className="   ">
+    <View className="bg-[#F7F7FA]">
+        <LocationCard location="Sharjah, UAE" />
+        <Header />
+        <Banner width="100%" height={150} image="" />
+
+
+    </View>
+    <CategoryTabs data={popcat}
+        bgcolor="transparent"
+        tabVal={activeCat}
+        settabData={categorySearch} />
+    <Tabs
+        data={popcat}
+        bgcolor="transparent"
+        tabVal={activeCat}
+        heading={"New Arrivals"}
+        settabData={categorySearch}
+    />
+    <ProductCard data={popcat}
+        bgcolor="transparent"
+        tabVal={activeCat}
+        settabData={categorySearch}
+    />
+
+    <Banner width="100%" height={150} image="a" />
+
+    <MostPopular data={popcat}
+        bgcolor="transparent"
+        tabVal={activeCat}
+        settabData={categorySearch} />
+
+    <OrderStatusCard />
+
+    <Aed1100 data={popcat}
+        bgcolor="transparent"
+        tabVal={activeCat}
+        settabData={categorySearch} />
+
+
+</ScrollView>
+{/* <Search /> */}
+{/* <BottomNavBar />
+</View > * /} */}

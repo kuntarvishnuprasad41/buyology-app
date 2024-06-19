@@ -6,6 +6,10 @@ import { Text } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
+import WishList from '../../../assets/icons/wishlist-b.svg'
+const wishlist_b = Image.resolveAssetSource(WishList).uri;
+
+
 
 const ProductsGrid = ({ type }) => {
 
@@ -160,7 +164,7 @@ const styles = StyleSheet.create({
 export const SearchCard = () => {
 
     const DEFAULT_IMAGE = "http://dev.sscinitiatives.com:6002/assets/temp/iPhoneLive.png"
-    const wishlist_b = "http://dev.sscinitiatives.com:6002/assets/icons/wishlist-b.svg"
+    // const wishlist_b = "http://dev.sscinitiatives.com:6002/assets/icons/wishlist-b.svg"
     return (
 
         // <View className="flex flex-col gap-2">
@@ -205,7 +209,7 @@ export const SearchCard = () => {
                     </TouchableOpacity>
                 </View>
 
-                <View className="absolute ml-[150px] mt-2">
+                <View className="absolute ml-[150px] mt-2  ">
                     <TouchableOpacity style={styles.wishlistButton}>
                         <View>
                             {/* <Icon name="heart" size={16} color="#000" /> */}
